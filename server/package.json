@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Francesca-fox/serverTest/issues"
   },
-  "homepage": "https://github.com/Francesca-fox/serverTest#readme"
+  "homepage": "https://github.com/Francesca-fox/serverTest#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

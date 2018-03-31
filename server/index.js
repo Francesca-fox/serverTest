@@ -11,5 +11,10 @@ app.get('/', (request, response) => {
 	response.send('OK')
 })
 
+app.get('/mem', (request, response) => {
+	response.json(mem)
+
+})
+
 
 app.listen(3240, () => console.log("j'écoute sur le port 3240"))

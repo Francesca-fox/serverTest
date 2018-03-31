@@ -7,6 +7,14 @@ console.log(mem)
 
 const app = express()
 
+app.use((request, response, next) => {
+	response.header("Access-Control-Allow-Origin", "*")
+	response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+	next()
+})
+//pour chaque requete faite à l'api, on a ce header dans la rep
+// next() dit qu'il a fini, et passer à un o app.
+
 app.get('/', (request, response) => {
 	response.send('OK')
 })
